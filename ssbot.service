@@ -6,8 +6,8 @@ After=network.target
 User=vladimir
 Group=vladimir
 
-WorkingDirectory=/home/vladimir/vkbot/
-Environment="PYTHONPATH=/home/vladimir/vkbot/"
+WorkingDirectory=/home/vladimir/ssparser/
+Environment="PYTHONPATH=/home/vladimir/ssparser/"
 ExecStart=/home/vladimir/ssparser/.venv/bin/python /home/vladimir/ssparser/main.py
 
 [Install]
