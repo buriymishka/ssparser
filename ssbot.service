@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram SSBot
+After=network.target
+
+[Service]
+User=vladimir
+Group=vladimir
+
+WorkingDirectory=/home/vladimir/vkbot/
+Environment="PYTHONPATH=/home/vladimir/vkbot/"
+ExecStart=/home/vladimir/ssparser/.venv/bin/python /home/vladimir/ssparser/main.py
+
+[Install]
+WantedBy=multi-user.target
