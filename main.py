@@ -79,6 +79,7 @@ def saveInFile(data):
 def readFromFile():
     file = open('flats.txt')
     data = json.load(file)
+    file.close()
     return data
 
 bot_token = '1967603615:AAHlfBlriWwgJXuhaniPytwVFmE2huTS1SE'
